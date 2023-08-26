@@ -167,10 +167,15 @@ h1{
 
 h2{
     font-size: 30px;
+    z-index: 1;
 }
 
 p{
     font-size: 22px;
+}
+
+h3{
+    font-size: 20px;
 }
 
 #sobre-nos{
@@ -196,9 +201,10 @@ p{
     filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.25));
     margin-top: -11px;
     margin-left: -5px;
+    z-index: -1;
 }
 
-#servicos .subtitulo{
+#servicos .subtitulo, #equipe .subtitulo{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 50px;
@@ -220,4 +226,48 @@ p{
     align-items: center;
     text-align: center;
     gap: 15px;
+}
+
+#equipe{
+
+}
+
+#equipe .cards-equipe{
+    width: 100%;
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 50px 0;
+}
+
+#equipe .cards-equipe .card-equipe{
+    background-color: #53EFC3;
+    width: fit-content;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    gap: 15px;
+    box-shadow: 3px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+
+#equipe .cards-equipe .card-equipe .info-integrantes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.info-integrantes span{
+    font-size: 16px;
+    color: #3D3D3D;
+}
+
+#equipe .cards-equipe .card-equipe .redes-sociais{
+    display: flex;
+    gap: 5px;
+}
+
+#equipe .cards-equipe .card-equipe .redes-sociais a:hover{
+    transform: translateY(-3px);
+    transition: 0.3s ease-in-out;
 }
