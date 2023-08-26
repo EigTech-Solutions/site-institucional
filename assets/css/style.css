@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    /* overflow-x: hidden; */
+    /* Works on Firefox */
+    scrollbar-width: thin;
+    scrollbar-color: #01b3b3 #d0eae3;
+}
+
+/* Works on Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 12px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #d0eae3;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #01b3b3;
+    border-radius: 20px;
+    border: 3px solid #d0eae3;
+}
+
+html {
+    scroll-padding-top: 12.5vh;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins';
+    font-size: 17px;
+    color: #000000;
+    overflow-x: hidden;
+}
+
+section{
+    width: 90%;
+    padding: 0 5%;
+    margin-bottom: 100px;
+}
+
+#inicial{
+    height: 100vh;
+    background-image: linear-gradient(180deg, #00CCCD 2.62%, #53EFC3 42.93%, rgba(93, 244, 194, 0.00) 100%);
+    color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header{
+    width: 100%;
+    padding: 5px 0 5px 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    transition: 0.5s linear;
+}
+
+header.ativa {
+    background-color: #22DAC9;
+    opacity: 0.95;
+    box-shadow: 2px 2px 4px #d0eae3;
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
+}
+
+.menu{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.menu .logo{
+    display: flex;
+    align-items: center;
+    font-size: 21px;
+    gap: 5px;
+}
+
+.menu .nav-list{
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+}
+
+.menu a{
+    color: #ffffff;
+    transition: 0.5s ease-in-out;
+    position: relative;
+}
+
+.menu .nav-list a:hover{
+    color: #015656;
+}
+
+.menu .nav-list a::after{
+    content: " ";
+    width: 0%;
+    height: 2px;
+    background-color: #015656;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 0.5s ease-in-out;
+}
+
+.menu .nav-list a:hover::after{
+    width: 100%;
+}
+
+h1{
+    font-size: 45px;
+    text-transform: uppercase;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+#inicial .slogan{
+    height: 318px;
+}
+
+#inicial .slogan button{
+    width: 300px;
+    padding: 4px;
+    background-color: #015656;
+    border: none;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: #ffffff;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+#inicial .slogan button img{
+    width: 30px;
+    animation: up-down 1.5s infinite alternate;
+}
+
+@keyframes up-down {
+    from {
+        transform: translateY(-4px);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#inicial .slogan button:hover{
+    font-size: 26px;
+    box-shadow: 2px 2px 6px #000000;
+}
+
+h2{
+    font-size: 30px;
+}
+
+p{
+    font-size: 22px;
+}
+
+#sobre-nos{
+    display: flex;
+    gap: 100px;
+}
+
+.subtitulo{
+    width: fit-content;
+    text-align: center;
+    padding: 5px;
+    margin-bottom: 35px;
+}
+
+.subtitulo .line-paralelograma{
+    width: 105%;
+    height: 8px;
+    -webkit-transform: skew(-40deg);
+    -moz-transform: skew(-40deg);
+    -o-transform: skew(-40deg);
+    background-color: #53EFC3;
+    filter: drop-shadow(1px 3px 3px rgba(0, 0, 0, 0.25));
+    margin-top: -11px;
+    margin-left: -5px;
+}
