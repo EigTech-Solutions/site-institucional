@@ -228,9 +228,48 @@ h3{
     gap: 15px;
 }
 
-#equipe{
-
+#projeto{
+    background: rgba(89, 131, 146, 0.60);
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
+
+#projeto .subtitulo h2{
+    color: #EFF6E0;
+}
+
+#projeto .subtitulo .line-paralelograma{
+    background-color: #124559;
+}
+
+#projeto p{
+    font-size: 17px;
+}
+
+#projeto .div-img-beneficios{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 25px 0;
+}
+
+#projeto .cards-beneficios{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#projeto .cards-beneficios .card-beneficio-project{
+    width: 500px;
+    height: 80px;
+    padding: 10px 10px 10px 15px;
+    background-color: #124559;
+    border-radius: 10px;
+    display: flex;
+    gap: 15px;
+    color: #ffffff;
+}
+
 
 #equipe .cards-equipe{
     width: 100%;
