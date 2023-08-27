@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EigTech</title>
-    <link rel="shortcut icon" href="#" type="image/x-icon">
+    <link rel="shortcut icon" href="assets/images/icons/arcticons_infinitode.png" type="image/x-icon">
+    <!-- importando o css da página -->
     <link rel="stylesheet" href="assets/css/style.css">
+    <!-- importando css da api de animamação  -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- sessão inicial -->
@@ -47,40 +50,45 @@
     <!-- sessão de sobre-nós -->
     <section id="sobre-nos">
         <div>
-            <div class="subtitulo">
+            <div class="subtitulo" data-aos="fade-right">
                 <h2>Sobre-Nós</h2>
                 <div class="line-paralelograma"></div>
             </div>
 
-            <p>A EigTech é uma empresa de tecnologia que possui como principal missão criar propostas e soluções para melhorar e solucionar os problemas e processos do dia-a-dia dos nossos clientes por meio da tecnologia.</p>
+            <p data-aos="fade-up">A EigTech é uma empresa de tecnologia que possui como principal missão criar propostas e soluções para melhorar e solucionar os problemas e processos do dia-a-dia dos nossos clientes por meio da tecnologia.</p>
         </div>
 
-        <div>
+        <div data-aos="fade-up">
             <img src="assets/images/icons/undraw_building_websites_i78t 1.png" alt="">
         </div>
     </section>
 
     <!-- sessão de serviços oferecidos -->
     <section id="servicos">
-        <div class="subtitulo">
+        <div class="subtitulo" data-aos="fade-up">
             <h2>Nossos Serviços</h2>
             <div class="line-paralelograma"></div>
         </div>
 
+        <!-- cards dos serviços prestados  -->
         <div class="cards-servicos">
-            <div class="card-servico">
+
+            <!-- 1º card  -->
+            <div class="card-servico" data-aos="fade-right">
                 <img src="assets/images/servicos/undraw_all_the_data_re_hh4w 1.png" alt="">
                 <h3>Monitoração Analytics</h3>
                 <span>Coletando e analisando dados para otimizar desempenho e tomar decisões informadas.</span>
             </div>
 
-            <div class="card-servico">
+            <!-- 2º card  -->
+            <div class="card-servico" data-aos="fade-up">
                 <img src="assets/images/servicos/undraw_drone_surveillance_kjjg 1.png" alt="">
                 <h3>Sistemas IoT</h3>
                 <span>Conectando dispositivos para interação e controle remoto, ampliando a automação e eficiência.</span>
             </div>
 
-            <div class="card-servico">
+            <!-- 3º card  -->
+            <div class="card-servico" data-aos="fade-left">
                 <img src="assets/images/servicos/undraw_web_devices_re_m8sc 1.png" alt="">
                 <h3>Web-Sites</h3>
                 <span>Criando presença online e compartilhando informações com audiências globais por meio de páginas web interativas.</span>
@@ -90,18 +98,18 @@
 
     <!-- sessão do projeto -->
     <section id="projeto">
-        <div class="subtitulo">
+        <div class="subtitulo" data-aos="fade-right">
             <h2>Projeto - EduTracking</h2>
             <div class="line-paralelograma"></div>
         </div>
 
         <div class="div-img-beneficios">
-            <img src="assets/images/icons/icon_sessao_projeto.png" width="500" alt="imagem ilustrativa do projeto">
+            <img src="assets/images/icons/icon_sessao_projeto.png" width="500" alt="imagem ilustrativa do projeto" data-aos="fade-up-right">
 
             <!-- cards dos benefícios do projeto -->
             <div class="cards-beneficios">
                 <!-- 1º card  -->
-                <div class="card-beneficio-project">
+                <div class="card-beneficio-project" data-aos="fade-left">
                     <img src="assets/images/icons/bi_reception-4.png" alt="icon gráfico">
                     
                     <div>
@@ -111,7 +119,7 @@
                 </div>
                 
                 <!-- 2º card  -->
-                <div class="card-beneficio-project">
+                <div class="card-beneficio-project" data-aos="fade-left">
                     <img src="assets/images/icons/tabler_device-analytics.png" alt="icon gráfico">
                     
                     <div>
@@ -121,7 +129,7 @@
                 </div>
                 
                 <!-- 3º card  -->
-                <div class="card-beneficio-project">
+                <div class="card-beneficio-project" data-aos="fade-left">
                     <img src="assets/images/icons/mingcute_target-fill.png" alt="icon gráfico">
 
                     <div>
@@ -134,12 +142,12 @@
         </div>
 
         <!-- descrição do projeto  -->
-        <p>*O projeto propõe o monitoramento abrangente da saúde e desempenho dos computadores de instituições educacionais, destinado aos alunos. Seu objetivo é fornecer dados precisos aos técnicos para aprimorar a performance das máquinas e agilizar a resolução de problemas quando suporte é necessário. Isso resulta em uma experiência de aprendizagem mais suave para os alunos, eliminando obstáculos no uso das máquinas e permitindo que eles se concentrem integralmente em suas atividades acadêmicas.</p>
+        <p data-aos="fade-up">*O projeto propõe o monitoramento abrangente da saúde e desempenho dos computadores de instituições educacionais, destinado aos alunos. Seu objetivo é fornecer dados precisos aos técnicos para aprimorar a performance das máquinas e agilizar a resolução de problemas quando suporte é necessário. Isso resulta em uma experiência de aprendizagem mais suave para os alunos, eliminando obstáculos no uso das máquinas e permitindo que eles se concentrem integralmente em suas atividades acadêmicas.</p>
     </section>
 
     <!-- sessão da equipe -->
     <section id="equipe">
-        <div class="subtitulo">
+        <div class="subtitulo" data-aos="fade-up">
             <h2>Nossa Equipe</h2>
             <div class="line-paralelograma"></div>
         </div>
@@ -147,7 +155,7 @@
         <!-- cards dos integrantes  -->
         <div class="cards-equipe">
             <!-- card 1º integrante  -->
-            <div class="card-equipe">
+            <div class="card-equipe" data-aos="fade-up-right">
                 <img src="assets/images/equipe/inacio_oliveira.png" alt="image integrante da equipe">
 
                 <div class="info-integrantes">
@@ -165,7 +173,7 @@
             </div>
 
             <!-- card 2º integrante  -->
-            <div class="card-equipe">
+            <div class="card-equipe" data-aos="fade-up">
                 <img src="assets/images/equipe/kauanny_tenorio.png" alt="image integrante da equipe">
 
                 <div class="info-integrantes">
@@ -183,7 +191,7 @@
             </div>
 
             <!-- card 3º integrante  -->
-            <div class="card-equipe">
+            <div class="card-equipe" data-aos="fade-up-left">
                 <img src="assets/images/equipe/pedro_prado.png" alt="image integrante da equipe">
 
                 <div class="info-integrantes">
@@ -201,7 +209,7 @@
             </div>
 
             <!-- card 4º integrante  -->
-            <div class="card-equipe">
+            <div class="card-equipe" data-aos="fade-up-right">
                 <img src="assets/images/equipe/enzo_bertoldo.png" alt="image integrante da equipe">
 
                 <div class="info-integrantes">
@@ -219,7 +227,7 @@
             </div>
 
             <!-- card 5º integrante  -->
-            <div class="card-equipe">
+            <div class="card-equipe" data-aos="fade-up">
                 <img src="assets/images/equipe/joao_pedro.png" alt="image integrante da equipe">
 
                 <div class="info-integrantes">
@@ -237,7 +245,7 @@
             </div>
 
             <!-- card 6º integrante  -->
-            <div class="card-equipe">
+            <div class="card-equipe" data-aos="fade-up-left">
                 <img src="assets/images/equipe/caua_ribeiro.png" alt="image integrante da equipe">
 
                 <div class="info-integrantes">
@@ -259,37 +267,37 @@
 
     <!-- sessão de contato / footer da página  -->
     <section id="contato">
-        <div class="subtitulo">
+        <div class="subtitulo" data-aos="fade-right">
             <h2>Quer trabalhar conosco?</h2>
             <div class="line-paralelograma"></div>
         </div>
 
-        <p>Envie-nos uma mensagem e entraremos em contato.</p>
+        <p data-aos="fade-right">Envie-nos uma mensagem e entraremos em contato.</p>
 
         <div class="info-contatos">
             <div>
-                <div class="icon-info-contato">
+                <div class="icon-info-contato" data-aos="fade-right">
                     <img src="assets/images/icons/icon_email.png" alt="icon email">
                     <a href="mailto:eigtechsolutions@gmail.com"><p>eigtechsolutions@gmail.com</p></a>
                 </div>
 
-                <div class="icon-info-contato">
+                <div class="icon-info-contato" data-aos="fade-right">
                     <img src="assets/images/icons/icon_telefone.png" alt="icon email">
                     <p>(11) 91234-5678</p>
                 </div>
 
-                <div class="icon-info-contato">
+                <div class="icon-info-contato" data-aos="fade-right">
                     <img src="assets/images/icons/icon_map.png" alt="icon email">
                     <p>Rua Haddock Lobo, 595 São Paulo - SP</p>
                 </div>
 
-                <div class="icon-info-contato">
+                <div class="icon-info-contato" data-aos="fade-right">
                     <img src="assets/images/icons/icon_github2.png" alt="icon email">
                     <a href="https://github.com/EigTech-Solutions" target="_blank"><p>EigTech-Solutions (github.com)</p></a>
                 </div>
             </div>
             
-            <img src="assets/images/icons/undraw_contact_us_re_4qqt 1.png" alt="icon de contato">
+            <img src="assets/images/icons/undraw_contact_us_re_4qqt 1.png" alt="icon de contato" data-aos="fade-left">
         </div>
 
         <p class="msg-footer">2023 - All rights reserved</p>
@@ -299,3 +307,8 @@
 </html>
 <!-- importando o javascript da página -->
 <script src="assets/js/script.js"></script>
+<!-- importando o javascript da api de animação -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
