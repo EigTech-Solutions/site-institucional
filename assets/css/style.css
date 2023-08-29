@@ -5,6 +5,7 @@
 body {
     font-size: 2vw; /* Tamanho de fonte base responsivo */
     width: 100vw;
+
 }
 
 * {
@@ -47,6 +48,7 @@ section{
     width: 90%;
     padding: 0 5%;
     margin-bottom: 100px;
+    overflow-x: hidden;
 }
 
 #inicial{
@@ -363,9 +365,14 @@ h3{
 
 @media (max-width: 480px) {
     body {
-        font-size: 12px;
-        text-align: center;
-        width: 100vw;
+    width: 100vw;
+    margin: 0; /* Remover margens padrão */
+    padding: 0; /* Remover preenchimentos padrão */
+    overflow-x: hidden; 
+    }
+
+    header {
+        padding: 10px 0;
     }
 
     .menu {
@@ -454,13 +461,13 @@ h3{
 
 
     #projeto .cards-beneficios .card-beneficio-project {
-        width: 100%;
-        height: 65px;
+        width: 95%;
+        height: 70px;
         text-align: left;
     }
 
     #projeto .cards-beneficios .card-beneficio-project p{
-        font-size: 15px;
+        font-size: 14.5px;
     }
     
 
@@ -484,6 +491,8 @@ h3{
     #contato .info-contatos .icon-info-contato img {
        width: 10%;
     }
+
+    
 }
 
 
