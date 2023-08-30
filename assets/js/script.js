@@ -6,3 +6,11 @@ function rolagem() {
 }
 
 window.addEventListener('scroll', rolagem);
+
+// Configuração do menu hamburguer - responsivo
+const hamburger = document.querySelector('.hamburger');
+const dropdown = document.querySelector('.dropdown');
+
+hamburger.addEventListener('click', () => {
+    dropdown.classList.toggle('active');
+});
